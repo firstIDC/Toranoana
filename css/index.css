@@ -1,0 +1,12 @@
+#loding {
+  width: 100%;
+  height: 100%;
+  background-color: #292929;
+}
+
+#loding .loding-log {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
