@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>虎の穴</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap-3.3.2-dist/css/custom.css" rel="stylesheet">
+    <link href="bootstrap-3.3.2-dist/css/navMenuIcon.css" rel="stylesheet">
+    <style>
+    #map {
+        height: 500px;
+      }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav"></div>
+      <div class="container_Box">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="text-center">
+                <div class="header-content-inner text-center">
+                  <h1 class="text-center site-title">SHOP INFO</h1>
+                  <div class="row gutter-50 shop">
+                    <div class="col-sm-6">
+                    <div id="map">지도</div>
+                    </div>
+                    <br>
+                    <div class="col-sm-6 text-left">
+                      <p class="lead">虎の穴</p>
+                      <p>Tel: <a href="tel:03-3440-0029">03-3440-0029</a><br>
+                      Open: 17:00〜24:00<br>
+                      定休日：月曜日（祝日の場合は営業、翌火曜日）<br>
+                      営業時間・定休日は変更となる場合がございますので、<br>
+                      ご来店前に店舗にご確認ください。
+                      </p>
+                      <p>東京都渋谷区恵比寿2-11-7 グリーンハイツ 1F</p>
+                      <p class="route jp">
+                      ＪＲ山手線　恵比寿駅（東口）徒歩７分 <br>
+                      東京メトロ日比谷線　恵比寿駅　徒歩９分 <br>
+                      東京メトロ日比谷線　広尾駅　徒歩12分 <br>
+                      恵比寿駅から673m
+                    </div>                
+                </div>
+              </div>                
+            </div>  
+          </div>                
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap-3.3.2-dist/jquery/jquery.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/nav.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/indexCustom.js"></script>
+    <script>
+      function initMap() { 
+        var myLatlng = new google.maps.LatLng(35.6455594, 139.7169548); // 좌표값
+          var mapOptions = { 
+                zoom: 19, // 지도 확대레벨 조정
+                center: myLatlng, 
+                mapTypeId: google.maps.MapTypeId.ROADMAP 
+          } 
+          var map = new google.maps.Map(document.getElementById('map'), mapOptions); 
+          var marker = new google.maps.Marker({ 
+        position: myLatlng, 
+        map: map, 
+        title: "虎の穴" // 마커에 마우스를 올렸을때 간략하게 표기될 설명글
+        }); 
+        var content = 
+        "<div jstcache='3' class='title full-width' jsan='7.title,7.full-width'>虎の穴</div>"
+        + "<div jstcache='4' jsinstance='1' class='address-line full-width' jsan='7.address-line,7.full-width'>〒150-0013</div>"
+        + "<div jstcache='4' jsinstance='2' class='address-line full-width' jsan='7.address-line,7.full-width'>東京都渋谷区恵比寿</div>"
+        + "<div jstcache='4' jsinstance='2' class='address-line full-width' jsan='7.address-line,7.full-width'>２丁目１１−7</div>"
+        + "</div>"
+        + "<div class='view-link'> <a target='_blank' jstcache='6' href='https://goo.gl/maps/nq4pYvK75uucX9uz9'> <span>Googleマップから見る</span> </a> </div>";
+       
+        var infowindow = new google.maps.InfoWindow({ content: content});
+
+        google.maps.event.addListener(marker, "click", function() {
+            infowindow.open(map,marker);
+        });
+      } 
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK6ud0cvpxBxaQ_lVU-mxfOmFOGImjMyE&callback=initMap"
+    async defer></script>
+    </body>
+</html>
