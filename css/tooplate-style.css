@@ -7,11 +7,11 @@ http://www.tooplate.com/view/2090-kinetic
 */
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 }
 
 p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 23px;
@@ -30,6 +30,7 @@ html, body, section, .page {
   transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
   -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
   color: #fff;
+  /* TODO : ページ切り替え時イメージを消す。 */
   background-image: url(../img/0003.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +42,7 @@ section {
 }
 
 section ul a {
-  color: #ede5e5db;
+  color: #141313db;
   font-size: 20px;
   font-weight: 600;
 }
@@ -90,19 +91,19 @@ ul {
     transform: translateX(0);
 }
 #t2:target .page#p2 {
-    transform: translateX(-90%);
+    transform: translateX(-86%);
 }
 #t3:target .page#p3 {
-    transform: translateX(-190%);
+    transform: translateX(-185%);
 }
 #t4:target .page#p4 {
-    transform: translateX(-290%);
+    transform: translateX(-285%);
 }
 #t1:target ul,
 #t2:target ul, 
 #t3:target ul,
 #t4:target ul {
-  background-color: rgba(48, 51, 60, 1);
+  background-color: #fff;
 }
 
 .page#p1 {
@@ -162,7 +163,7 @@ ul .icon:hover {
 }
 
 ul {
-  padding-top: 20%;
+  padding-top: 15%;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -210,8 +211,8 @@ a {
 }
 
 .page#p1 .icon {
-  margin-left: 10%;
-  	height: 400px;
+  margin-left: 18%;
+  height: 400px;
 }
 
 .page#p2 .icon {
@@ -227,7 +228,7 @@ a {
 }
 
 .page#p1 .icon {
-  transform: translateX(0) !important;
+  transform: translateX(0);
 }
 
 #t2:target .page#p2 .icon {
@@ -244,11 +245,12 @@ a {
 
 .credit {
 	position: absolute;
+  left: 5%;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 }
 
 .credit a {
@@ -257,7 +259,7 @@ a {
 
 
 .primary-button a {
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	display: inline-block;
 	padding: 15px 25px;
 	background-color: #63adcc;
@@ -285,7 +287,7 @@ a {
 
 #p1 span {
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	text-transform: uppercase;
 	font-weight: 300;
 }
@@ -293,7 +295,7 @@ a {
 #p1 h4 {
 	letter-spacing: 1px;
 	font-size: 60px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -322,7 +324,7 @@ a {
 
 #p2 .title {
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	text-transform: uppercase;
 	font-weight: 300;
 	margin-bottom: 60px;
@@ -331,7 +333,7 @@ a {
 #p2 h4 {
 	letter-spacing: 1px;
 	font-size: 48px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	font-weight: 600;
 	margin-bottom: 30px;
 }
@@ -340,7 +342,7 @@ a {
 
 #p3 .title {
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	text-transform: uppercase;
 	font-weight: 300;
 	margin-bottom: 60px;
@@ -361,7 +363,7 @@ a {
 
 #p4 .title {
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	text-transform: uppercase;
 	font-weight: 300;
 	margin-bottom: 60px;
@@ -373,7 +375,7 @@ a {
 }
 
 #p4 input {
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	padding-left: 15px;
 	max-width: 100%;
 	height: 40px;
@@ -394,7 +396,7 @@ a {
 }
 
 #p4 textarea {
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
 	margin-top: 35px;
   margin-bottom: 20px;
   padding-left: 15px;
@@ -419,7 +421,7 @@ a {
 }
 
 #p4 button {
-	font-family: 'Montserrat', sans-serif;
+	font-family: A1明朝, "A1 Mincho", serif;
   	display: inline-block;
 	padding: 15px 25px;
 	background-color: #63adcc;
@@ -510,7 +512,7 @@ a {
 	#p1 h4 {
 		letter-spacing: 1px;
 		font-size: 36px;
-		font-family: 'Montserrat', sans-serif;
+		font-family: A1明朝, "A1 Mincho", serif;
 		text-transform: uppercase;
 		font-weight: 500;
 	}
