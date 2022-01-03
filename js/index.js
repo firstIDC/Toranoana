@@ -9,7 +9,6 @@ $(document).ready(function() {
     //スクロールイベント
     $('.page').scroll(function(e){
         const targetId =  "#" + $(e.target).children().context.id;
-        console.log(targetId)
         var scrollTop = $(targetId).scrollTop();
         var innerHeight = $(targetId).innerHeight();
         var scrollHeight = $(targetId).prop('scrollHeight');
@@ -41,7 +40,7 @@ $(document).ready(function() {
         
     })
 
-    $('#shop-info').click(function() {
+    $('#shop-info, .goShopInfo').click(function() {
         $('#p1-sub1').css('transform', 'translateX(175%)');    
         setTimeout(() => {
             $('#p1-sub1').css('display', 'none');    
@@ -54,7 +53,6 @@ $(document).ready(function() {
 
     $(window).bind('hashchange', function() {
         var nowPageName =  document.location.href.split("#");
-        console.log(nowPageName)
         switch(nowPageName[nowPageName.length-1]) {
             case 't1':
                 $('#p1-sub1').css('transform', 'translateX(175%)');    
@@ -81,4 +79,11 @@ $(document).ready(function() {
           }
    });
 
+   
+
 });
+
+$('.carousel').carousel({
+    interval: 2000
+})
+
