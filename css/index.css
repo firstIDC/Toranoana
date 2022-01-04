@@ -35,13 +35,35 @@
 
 .shop-info .shop-image { overflow: hidden; }
 
-.shop-info a{
-  text-decoration: none;
-}
-
 .shop-info p {
   font-size: 20px;
   color: #fff;
+}
+
+.project-item {
+  overflow: hidden; 
+}
+
+.project-item img {
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -ms-transform:scale(1); 
+  -o-transform:scale(1);  
+  transform:scale(1);
+  -webkit-transition:1s;
+  -moz-transition:1s;
+  -ms-transition:1s;
+  -o-transition:1s;
+  transition:1s;
+  
+}
+
+.project-item:hover img {
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -ms-transform:scale(1.2);   
+  -o-transform:scale(1.2);
+  transform:scale(1.2);
 }
 
 .icon-sub {
@@ -64,20 +86,17 @@
   transform: translateX(175%);
 }
 
+#p1-sub1 .entry-content{
+  background-color: rgba(0, 0, 0, 0.51);
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    border-radius: 34px;
+}
+
 #p4 .card{
   color: #000000 !important;
 }
 
-/* .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+.google-map iframe {
+  width: 100% !important;
+  height: 100% !important;
 }
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-} */

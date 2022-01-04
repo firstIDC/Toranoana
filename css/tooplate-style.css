@@ -42,7 +42,7 @@ section {
 }
 
 section ul a {
-  color: #141313db;
+  color: rgba(20, 19, 19, 0.859);
   font-size: 20px;
   font-weight: 600;
 }
@@ -53,14 +53,18 @@ section ul a {
 
 #p1 {
   left: 0;
+  background-color: #343434;
   background-image: url(../img/0003.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #p2 {
   left: 100%;
+  background-color: #343434;
   background-image: url(../img/0005.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -68,6 +72,7 @@ section ul a {
 #p3 {
   left: 200%;
   background-image: url(../img/0003.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -75,6 +80,7 @@ section ul a {
 #p4 {
   left: 300%;
   background-image: url(../img/0005.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -211,8 +217,9 @@ a {
 }
 
 .page#p1 .icon {
-  margin-left: 18%;
+  margin-left: 15%;
   height: 400px;
+  right: 0 !important;
 }
 
 .page#p2 .icon {
